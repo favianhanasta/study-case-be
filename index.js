@@ -27,5 +27,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(2200,()=>{
-    console.log(`YOUR API RUNNING :`,2200)
+    console.log(`YOUR API RUNNING :${2200}`)
 })
