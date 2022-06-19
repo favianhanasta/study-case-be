@@ -5,6 +5,7 @@ const app = express();
 const https = require("https");
 app.use(express.json());
 app.use(express.static('public'));
+let port = process.env.PORT || 2200
 
 
 let tweet = [];
@@ -26,6 +27,6 @@ app.get("/",(req,res)=>{
     res.status(200).send(tweet)
 })
 
-app.listen(2200,()=>{
-    console.log(`YOUR API RUNNING :${2200}`)
+app.listen(port,()=>{
+    console.log(`YOUR API RUNNING :${port}`)
 })
